@@ -1,0 +1,77 @@
+/*
+*
+|  Page Name       : navigation.css
+|  Description     : css for navigation
+|  Created by      : May Altamerano
+|  Date Created    : February 22, 2019
+|  Last Update by  : May Altamerano
+|  Last update     : February 22, 2019
+*
+*/
+.-navigation{
+
+}
+.-navigation .-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 40px;
+}
+.-navigation .-navbar-text{
+  font-size: 26px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.-navigation .-user-option{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: auto;
+  flex-direction: column;
+}
+.-navigation .-user-option>.-btn-profile{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+}
+.-navigation .-user-option>.-drop-menu{
+  position: absolute;
+}
+.-navigation .-fig-user{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.-navigation .-img-user{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.-navigation .-spn-name{
+  font-size: 14px;
+}
+.-btn-toggle{
+  display: none;
+}
+@media only screen and (max-width: 800px){
+  .-navigation .-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 26px;
+  }
+  .-navigation .-navbar-text {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .-navigation .-user-option{
+    display: none;
+  }
+  .-navigation .-btn-toggle{
+    display: block;
+  }
+}

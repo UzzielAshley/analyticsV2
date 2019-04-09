@@ -1,0 +1,106 @@
+/*
+*
+|  Page Name       : login.css
+|  Description     : css for login
+|  Created by      : May Altamerano
+|  Date Created    : February 22, 2019
+|  Last Update by  : May Altamerano
+|  Last update     : February 22, 2019
+*
+*/
+.-login-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.-form-container{
+  width: 45%;
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  bottom: 50px;
+}
+.-login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.-login-form .-fig-login {
+  height: 280px;
+  width: 40%;
+  overflow: hidden;
+}
+.-login-form .-img-login{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.-login-form .-field-container{
+  width: 60%;
+}
+.-login-form .-header-text{
+  margin: 0px 0px 20px 0px;
+  font-size: 24px;
+  display: block;
+}
+.-login-form .-input-default{
+  height: 45px;
+  padding: 6px 20px;
+}
+.-login-form .-btn-login{
+  padding: 11px 20px;
+  border-radius: 35px;
+  background-color: #1c2f65;
+  border-color: #284083;
+  width: 100%;
+  margin-top: 20px;
+}
+.-login-vector{
+  position: absolute;
+  right: -42px;
+  width: 67%;
+}
+@media only screen and (max-width: 800px){
+  .-form-container {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+  }
+  .-login-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .-login-form .-fig-login {
+    height: 150px;
+    width: 40%;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  .-login-form .-field-container {
+    width: 80%;
+    margin-top: 37vh;
+  }
+  .-login-form .-header-text {
+    margin: 0px 0px 20px 0px;
+    font-size: 24px;
+    display: none;
+  }
+  .-login-vector{
+    position: absolute;
+    z-index: -1;
+    height: 50%;
+    top: 77px;
+    right: -57px;
+    width: auto;
+  }
+}

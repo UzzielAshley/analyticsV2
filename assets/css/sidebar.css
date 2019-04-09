@@ -1,0 +1,267 @@
+/*
+*
+|  Page Name       : sidebar.css
+|  Description     : css for displaying sidebar
+|  Created by      : May Altamerano
+|  Date Created    : February 22, 2019
+|  Last Update by  : May Altamerano
+|  Last update     : February 22, 2019
+*
+*/
+.-sidebar{
+  position: fixed;
+  width: 250px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0px;
+  transition: all 0.4s ease 0s;
+}
+.-sidebar .-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px;
+}
+.-sidebar .-navbar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.-sidebar .-nav-header{
+  height: 80px;
+  width: 100%;
+  float: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+.-header-logo{
+  font-weight: 600;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none !important;
+  margin: 0 15px 0 0;
+}
+.-sidebar .-logo-fig{
+  height: 65%;
+  width: 180px;
+  display: block;
+}
+.-sidebar .-logo-img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.-sidebar .-fig-user,
+.-sidebar .-spn-name{
+  display: none;
+}
+.-sidebar .-navbar li.active,
+.-sidebar .-navbar li{
+  width: 100%;
+  float: none;
+}
+.-sidebar .-navbar>li.active>a{
+  height: 36px;
+  opacity: 0.9;
+}
+.-sidebar .-navbar>li>a:hover,
+.-sidebar .-navbar>li>a:focus{
+  opacity: 0.9;
+}
+.-sidebar .-navbar>li>a{
+  padding: 5px 5px 5px 45px;
+  margin-bottom: 13px;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0.8;
+}
+.-time-date-display{
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.-display-date{
+  font-size: 14px;
+}
+.-display-time{
+  font-size: 26px;
+  font-weight: 600;
+}
+.-display-time .-time{
+  text-transform: uppercase;
+}
+.-backdrop{
+  display: none;
+}
+@media only screen and (max-width: 800px){
+  .-sidebar {
+    position: fixed;
+    width: 250px;
+    top: 0;
+    left: -250px;
+    bottom: 0;
+    margin: 0px;
+    z-index: 100;
+    transition: all 0.4s ease 0s;
+  }
+  .-sidebar .-nav-header{
+    height: 140px;
+    width: 100%;
+    float: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    margin: 0px 0px 30px 0px;
+    flex-direction: column;
+  }
+  .-sidebar .-logo-fig{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    height: 5%;
+    width: 170px;
+    display: block;
+  }
+  .-sidebar .-spn-name{
+    display: block;
+  }
+  .-sidebar .-fig-user{
+    display: block;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  .-sidebar .-img-user{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .-sidebar .-navbar>li>a{
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 80px;
+  }
+  .-header-logo{
+   position: absolute;
+   bottom: 20px;
+   margin: 0;
+   left: 55px;
+   font-size: 13px;
+  }
+  .-time-date-display{
+    position: absolute;
+    bottom: 60px;
+    left: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+
+  .-sidebar.-active {
+    position: fixed;
+    width: 250px;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    margin: 0px;
+    z-index: 100;
+    transition: all 0.4s ease 0s;
+  }
+  .-sidebar.-active .-nav-header{
+    height: 140px;
+    width: 100%;
+    float: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    margin: 0px 0px 30px 0px;
+    flex-direction: column;
+  }
+  .-sidebar.-active .-logo-fig{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    height: 5%;
+    width: 170px;
+    display: block;
+  }
+  .-sidebar.-active .-spn-name{
+    display: block;
+  }
+  .-sidebar.-active .-fig-user{
+    display: block;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  .-sidebar.-active .-img-user{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .-sidebar.-active .-navbar>li>a{
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 80px;
+  }
+  .-sidebar.-active .-header-logo{
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    left: 55px;
+    font-size: 13px;
+  }
+  .-sidebar.-active .-time-date-display{
+    position: absolute;
+    bottom: 60px;
+    left: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .-backdrop.-active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    background-color: #00000094;
+  }
+  .-sidebar .-backdrop{
+    display: none;
+  }
+}
